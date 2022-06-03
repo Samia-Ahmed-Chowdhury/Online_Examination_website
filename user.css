@@ -1,0 +1,106 @@
+p{
+	font-size: 20px;
+}
+
+ body{ 
+  background-image: url(i/background.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+ }
+  .banner {
+	  width: 100%;
+	  position: absolute;
+
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+  }
+  
+  .banner h1 {
+	  font-size: 80px;
+	  color:black;
+	  font-width: 300;
+	  margin-bottom: 02px;
+	  animation: moveToLeft 2s;
+}
+  
+  .banner span {
+	 
+	   font-weight: 700;
+	   color: black;
+	   
+  }
+  
+  .banner p {
+	  font-size: 50px;
+	  font-weight: 300;
+	  color: black;
+	  margin-bottom: 20px;
+	  animation: moveToRight 2s;
+	}
+  .banner button {
+	  width: 180px;
+	  padding: 12px;
+	  margin: 20px;
+	  border: 2px solid #eee;
+	  border-radius:  50px;
+	  font-size: 18px;
+	  outline: none;
+	  letter-spacing: 1px;
+	  cursor: pointer;
+      background-color: #BCDDFC;
+    } 
+   .btn-left {
+	   background-color: #BCDDFC;
+	   color: #444
+	   animation-name: animateBtn;
+	   animation-duration: 1s;
+	   animation-delay: 1.5s;
+	   animation-fill-mode: backwards;
+           animation: moveToLeft 2s;
+	   
+   }
+   .first-letter{
+	text-transform: uppercase;
+	font-size: 5.3rem;
+color: red;
+}
+   
+   .btn-right {
+	   background-color: #BCDDFC;
+	 color: #444
+	   animation-name: animateBtn;
+	   animation-duration: 1s;
+	   animation-delay: 2.3s;
+	   animation-fill-mode: backwards;
+   animation: moveToRight 2s;
+   }
+   
+   @keyframes moveToLeft {
+	   0% {
+		   transform: translateX(120px);
+		   opacity: 0;
+	   }
+	   
+	   100% {
+		   transform: translateX(0);
+		   opacity: 1;
+	   }
+   }	 
+    @keyframes moveToRight { 
+	  0% {
+		  transform: translateX(-120px);
+		  opacity: 0;
+	  }
+	  
+	  100% {
+		  transform: translateX(0);
+		  opacity: 1;
+		  
+		  
+	  }
+	  
+  }
+
